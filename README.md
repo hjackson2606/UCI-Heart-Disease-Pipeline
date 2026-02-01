@@ -13,7 +13,7 @@ Recall was selected as the primary evaluation metric because failing to identify
 
 ## Pipeline Overview
 The modeling pipeline includes:
-- Train-test split with stratification
+- Train test split with stratification
 - Separate preprocessing pipelines for numerical and categorical features
 - Median imputation and standard scaling for numerical features
 - Mode imputation and one-hot encoding for categorical features
@@ -23,7 +23,7 @@ The modeling pipeline includes:
 ## Feature Selection
 Several features were excluded to improve generalizability and reduce bias:
 - An engineered feature (`max_hr_gap`) was removed due to no measurable improvement in cross-validation performance.
-- The `dataset` feature was excluded to avoid introducing location-specific bias.
+- The `dataset` feature was excluded to avoid introducing location specific bias.
 - The `ca` and `thal` features were removed because more than 50% of their values were missing, which would bias the model toward imputed values.
 
 ## Model Performance
