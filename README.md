@@ -4,7 +4,7 @@
 Heart disease is the leading cause of death worldwide. The goal of this project is to build a machine learning pipeline that can accurately identify patients with heart disease.
 
 ## About Dataset
-- Featured 920 rows of patients
+- Featured 920 rows of patient data
 - Included a mixture of numerical and categorical features
 - Balanced target class
 
