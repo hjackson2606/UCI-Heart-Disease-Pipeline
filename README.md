@@ -22,7 +22,7 @@ The modeling pipeline includes:
 
 ## Feature Selection
 Several features were excluded to improve generalizability and reduce bias:
-- An engineered feature (`max_hr_gap`) was removed due to no measurable improvement in cross-validation performance.
+- An engineered feature `max_hr_gap` was removed due to no measurable improvement in cross-validation performance.
 - The `dataset` feature was excluded to avoid introducing location-specific bias.
 - The `ca` and `thal` features were removed because more than 50% of their values were missing, which would bias the model toward imputed values.
 
