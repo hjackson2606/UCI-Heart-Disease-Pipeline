@@ -29,3 +29,5 @@ Several features were excluded to improve generalizability and reduce bias:
 ## Model Performance
 
 ![Bar Chart of Models](model-pics/model-bar-chart.png)
+
+The Random Forest model achieved the highest Recall of **91%** on the positive class, making it the most effective at identifying patients with heart disease.
