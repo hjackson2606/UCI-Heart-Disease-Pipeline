@@ -1,8 +1,28 @@
-# Heart Disease Detection Pipeline
+import streamlit as st
 
+st.set_page_config(
+    page_title="Heart Disease Predictor",
+    page_icon="🫀",
+    layout="wide",
+)
+
+st.markdown("""
+# Heart Disease Detection Pipeline
+""")
+
+st.image("images/heart.jpg", width=1000)
+
+st.markdown("""
 ## Problem Statement
 Heart disease is the leading cause of death worldwide. The goal of this project is to build a machine learning pipeline that can accurately identify patients with heart disease.
+""")
 
+col1, col2, col3 = st.columns(3)
+col1.metric("Patients", "920")
+col2.metric("Recall", "91%")
+col3.metric("Best Model", "Random Forest")
+
+st.markdown("""
 ## About Dataset
 - Featured 920 rows of patient data
 - Included a mixture of numerical and categorical features
@@ -27,7 +47,15 @@ Several features were excluded to improve generalizability and reduce bias:
 - The `ca` and `thal` features were removed because more than 50% of their values were missing, which would bias the model toward imputed values.
 
 ## Model Performance
+""")
 
-![Bar Chart of Models](images/model-bar-chart.png)
+st.image("images/model-bar-chart.png")
 
+st.markdown("""
 The Random Forest model achieved the highest Recall of **91%** on the positive class, making it the most effective at identifying patients with heart disease.
+""")
+
+st.divider()
+
+if st.button("Try the Predictor →"):
+    st.switch_page("pages/1_Heart_Disease_Predictor.py")
