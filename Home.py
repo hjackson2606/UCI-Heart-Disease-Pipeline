@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 st.markdown("""
-# Heart Disease Detection Pipeline
+# Heart Disease Predictor
 """)
 
 st.image("images/heart.jpg", width=1000)
