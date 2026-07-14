@@ -1,5 +1,9 @@
 # Heart Disease Predictor
 
+🔗 **[Try the live app](https://heart-disease-predictor-hj.streamlit.app)** | **[API docs](https://heart-disease-predictor-edso.onrender.com/docs)**
+
+> Note: the API is hosted on a free tier that spins down after inactivity — the first prediction may take 30–60 seconds while it wakes up.
+
 ## Problem Statement
 Heart disease is the leading cause of death worldwide. The goal of this project is to build a machine learning pipeline that can accurately identify patients with heart disease.
 
@@ -27,7 +31,9 @@ Several features were excluded to improve generalizability and reduce bias:
 - The `ca` and `thal` features were removed because more than 50% of their values were missing, which would bias the model toward imputed values.
 
 ## Model Performance
-
 ![Bar Chart of Models](images/model-bar-chart.png)
 
 The Random Forest model achieved the highest Recall of **91%** on the positive class, making it the most effective at identifying patients with heart disease.
+
+## Deployment
+The trained model is served via a **FastAPI** REST API (hosted on Render) and accessed through a **Streamlit** front-end (hosted on Streamlit Community Cloud). The interface lets a user input patient features and receive a real-time prediction and probability score.
