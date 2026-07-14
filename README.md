@@ -1,4 +1,4 @@
-# Heart Disease Detection Pipeline
+# Heart Disease Predictor
 
 ## Problem Statement
 Heart disease is the leading cause of death worldwide. The goal of this project is to build a machine learning pipeline that can accurately identify patients with heart disease.
