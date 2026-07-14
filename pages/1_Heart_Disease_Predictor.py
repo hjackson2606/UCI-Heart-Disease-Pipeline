@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Heart Disease Risk Predictor")
+st.title("Heart Disease Predictor")
 
 col1, col2 = st.columns(2)
 
